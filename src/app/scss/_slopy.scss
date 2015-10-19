@@ -1,0 +1,136 @@
+//http://tympanus.net/codrops/2011/12/21/slopy-elements-with-css3/
+
+
+//Slopy Elements
+.se-container{
+	display: block;
+	width: 100%;
+	overflow: hidden;
+	padding-top: 208px;
+}
+.se-slope-left{
+	margin: 0 -70px;
+	transform-origin: left center;
+}
+.se-slope-left:nth-child(odd){
+	background: #c13500;
+	transform: rotate(5deg);
+	margin-top: -140px;
+	box-shadow: 0px -1px 3px rgba(0,0,0,0);
+}
+.se-slope-left:nth-child(even){
+	background: #ffffff;
+	transform: rotate(-5deg);
+	box-shadow: 0px 2px 3px rgba(0,0,0,0);
+}
+.se-content-left{
+	margin: 0 auto;
+}
+.se-slope-left:nth-child(odd) .se-content-left{
+	transform: rotate(-5deg);
+	color: #ffffff;
+	padding: 40px 100px 150px 100px;
+}
+.se-slope-left:nth-child(even) .se-content-left{
+	transform: rotate(5deg);
+	color: #000000;
+	padding: 80px 80px 50px 80px;
+}
+
+
+
+.se-slope-right{
+	margin: 0 -50px;
+	transform-origin: left center;
+}
+.se-slope-right:nth-child(odd){
+	background: #c13500;
+	transform: rotate(-5deg);
+	margin-top: -95px;
+	box-shadow: 0px -1px 3px rgba(0,0,0,0);
+}
+.se-slope-right:nth-child(even){
+	background: #ffffff;
+	transform: rotate(5deg);
+	margin-top: -220px;
+	box-shadow: 0px 2px 3px rgba(0,0,0,0);
+}
+.se-content-right{
+	margin: 0 auto;
+}
+.se-slope-right:nth-child(odd) .se-content-right{
+	transform: rotate(5deg);
+	color: #ffffff;
+	padding: 40px 80px 200px 80px;
+}
+.se-slope-right:nth-child(even) .se-content-right{
+	transform: rotate(-5deg);
+	color: #000000;
+	padding: 80px 75px 80px 75px;
+}
+
+
+
+
+/***********
+.se-content h3{
+	font-size: 60px;
+	position: relative;
+	display: inline-block;
+	padding: 10px 30px 8px 30px;
+	height: 80px;
+	line-height: 80px;
+	margin-bottom: 20px;
+	font-family: 'Bitter', 'Trebuchet MS', Arial;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.9);
+    color: #ffffff;
+}
+.se-slope:nth-child(odd) .se-content h3{
+	background: #e90089;
+	color: #000;
+}
+.se-slope:nth-child(even) .se-content h3{
+	background: #000;
+	color: #e90089;
+}
+.se-content h3:before{
+	content: '';
+	width: 0;
+	height: 0;
+	border-top: 38px solid transparent;
+	border-bottom: 60px solid transparent;
+	border-right: 60px solid black;
+	position: absolute;
+	left: -59px;
+	top: 0px;
+}
+.se-content h3:after{
+	content: '';
+	width: 0;
+	height: 0;
+	border-top: 38px solid transparent;
+	border-bottom: 60px solid transparent;
+	border-left: 60px solid black;
+	position: absolute;
+	right: -59px;
+	top: 0px;
+}
+.se-slope:nth-child(odd) .se-content h3:before,
+.se-slope:nth-child(odd) .se-content h3:after{
+	border-right-color: #e90089;
+	border-left-color: #e90089;
+}
+.se-content p{
+	width: 75%;
+	max-width: 500px;
+	margin: 0 auto;
+	font-style: italic;
+	font-size: 18px;
+	line-height: 24px;
+	padding-top: 10px;
+}
+.se-content p:first-letter{
+	font-size: 40px;
+	font-family: 'Adobe Garamond Pro', Georgia, serif;
+}
+***********/
