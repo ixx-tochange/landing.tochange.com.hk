@@ -18,8 +18,8 @@
 
         <ul class="nav navbar-nav navbar-right">
             <li class="active"><a ng-href="#"><span class="glyphicon glyphicon-home"></span> 網站首頁</a></li>
-            <li><a ng-href="#"><span class="glyphicon glyphicon-book"></span> 集運教學</a></li>
-            <li><a ng-href="pricelist"><span class="glyphicon glyphicon-usd"></span> 集運收費</a></li>
+            <li><a ng-href="#"><span class="glyphicon glyphicon-book"></span> 合併集運</a></li>
+            <li><a ng-href="pricelist"><span class="glyphicon glyphicon-usd"></span> 集運導航</a></li>
             <li><a ng-href="client/#/login"><span class="glyphicon glyphicon-user"></span></a></li>
         </ul>
 
@@ -30,6 +30,10 @@
 
 <div id="page-content">
              
+    <div class="row">
+        <div class="regist_and_login_bar text_right"><a href="#"><span class="glyphicon glyphicon-log-in" style="padding-right:5px;"></span>註冊成為會員/登入</a></div>
+    </div>
+    
     <div class="row">
         <div class="col-12 carousel">
             <div class="carousel-text-container">
@@ -366,51 +370,56 @@
             </div>
             <div class="se-slope-right" id="pricelist">
                 <article class="se-content-right">
-
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <div class="panel panel-default">
-                                <div class="panel-heading text-center" style="background-color: #ffffff; border-color: #fe5722;">
-                                    <h4 style="color: #fe5722;">淘轉特價專線</h4>
-                                </div>
-                                <div class="panel-body text-center" style="height: 120px; padding: 20px;">
-                                    <p>星期一至六：10:00 - 18:00 (日間派送)</p>
-                                </div>
-                                <div class="panel-footer text-right" style="background-color: #ffffff; border: 0px;">
-                                    <span style="color: #fe5722;">首重：人民幣 13/KG，續重：人民幣 6/KG</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="panel panel-default">
-                                <div class="panel-heading text-center" style="background-color: #ffffff; border-color: #fe5722;">
-                                    <h4 style="color: #fe5722;">大貨專線</h4>
-                                </div>
-                                <div class="panel-body text-center" style="height: 120px; padding: 20px;">
-                                    <p>星期一至六：10:00 - 18:00 (日間派送)</p>
-                                </div>
-                                <div class="panel-footer text-right" style="background-color: #ffffff; border: 0px;">
-                                    <span style="color: #fe5722;">沒有首重，續重：人民幣 5/KG</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="panel panel-default">
-                                <div class="panel-heading text-center" style="background-color: #ffffff; border-color: #fe5722;">
-                                    <h4 style="color: #fe5722;">自取點</h4>
-                                </div>
-                                <div class="panel-body text-center" style="height: 120px; padding: 20px;">
-                                    <p>星期一至六：12:00 - 17:00<br>超過以上時間，可預約。(星期日及公眾假期休息)</p>
-                                </div>
-                                <div class="panel-footer text-right" style="background-color: #ffffff; border: 0px;">
-                                    <span style="color: #fe5722;">首重：人民幣 13/KG，續重：人民幣 5/KG</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    
+                    
                 </article>
             </div>
         </section>
+    </div>
+    
+    <div class="row pickup_banner">
+        <div class="col-sm-12"></div>
+    </div>
+    <div class="row pickup_part">
+        <div class="col-sm-4">
+            <div class="panel panel-default">
+                <div class="panel-heading text-center" style="background-color: #ffffff; border-color: #fe5722;">
+                    <h4 style="color: #fe5722;">葵涌自取點</h4>
+                </div>
+                <div class="panel-body text-center" style="height: 85px; padding: 20px;">
+                    <p>星期一至六：10:00 – 19:00<br>星期日及公眾假期休息</p>
+                </div>
+                <div class="panel-footer text-center" style="background-color: #ffffff; border: 0px;">
+                    <span style="color: #fe5722;">電話: 3184 0300</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="panel panel-default">
+                <div class="panel-heading text-center" style="background-color: #ffffff; border-color: #fe5722;">
+                    <h4 style="color: #fe5722;">粉嶺自取點</h4>
+                </div>
+                <div class="panel-body text-center" style="height: 85px; padding: 20px;">
+                    <p>星期一至六：10:00 – 19:00<br>星期日及公眾假期休息</p>
+                </div>
+                <div class="panel-footer text-center" style="background-color: #ffffff; border: 0px;">
+                    <span style="color: #fe5722;">電話: 9756 6655</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="panel panel-default">
+                <div class="panel-heading text-center" style="background-color: #ffffff; border-color: #fe5722;">
+                    <h4 style="color: #fe5722;">屯門自取點</h4>
+                </div>
+                <div class="panel-body text-center" style="height: 85px; padding: 20px;">
+                    <p>星期一至六：10:00 – 19:00<br>星期日及公眾假期休息</p>
+                </div>
+                <div class="panel-footer text-center" style="background-color: #ffffff; border: 0px;">
+                    <span style="color: #fe5722;">電話: 3184 0300</span>
+                </div>
+            </div>
+        </div>
     </div>
 
 
@@ -453,7 +462,9 @@
               <li><a href="#">TO Change</a></li>
               <li><a href="#">廣告查詢</a></li>
               <li><a href="#">聯繫我們</a></li>
-              <li><a href="#">Facebook</a></li>
+              <li><a href="#"><img src="../../assets/images/fb.png" height="25px" /></a></li>
+              <li><a href="#"><img src="../../assets/images/aliwangwang.png" height="25px" /></a></li>
+              <li><a href="#"><img src="../../assets/images/tb.png" height="25px" /></a></li>
             </ul> 
           </div>
           <div class="col-xs-4 text-right">

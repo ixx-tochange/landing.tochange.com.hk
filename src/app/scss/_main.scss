@@ -5363,3 +5363,38 @@ a.text-#000000:hover {
     margin-top:8px;
   }
 }
+
+
+.pickup_banner {
+    padding-top: -50px;
+    display: block;
+    height: 310px;
+    background: url(../../assets/images/pickup_bg.png) top center no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.pickup_part {
+    background: #aa5541;
+}
+
+@media (min-width: 768px) {
+    .regist_and_login_bar {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .regist_and_login_bar {
+        text-align: right;
+        background-color: #444444;
+        display: block;
+        height: 30px;
+        width: 100%;
+        color:white;
+        padding: 4px 15px;
+    }
+}
