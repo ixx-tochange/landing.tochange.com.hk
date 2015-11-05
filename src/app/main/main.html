@@ -11,6 +11,16 @@
         <div class="carousel-inner" role="listbox">
 
           <div class="item active">
+            <img src="../../assets/images/Carousel_bg_1.jpg" alt="物流，匯款及網上充值">
+            <div class="carousel-caption">
+              <h3 class="font-bold text-black animated fadeInDown header text-left">物流，匯款及網上充值<br><span class="b-black b-3x">一站式服務</span></h3>
+              <p class="text-muted carousel-text-content animated fadeInUpBig text-left">淘轉是全港提供全面的網絡平台服務公司之一，致力發展物流，匯款及網上充值業務。我們會為各會員提供一系列服務，包括國內網購合併集運到香港，支付寶充值，香港至國內快遞，及香港至國內匯款，務求令各會員可體驗一個合理價格，快捷可靠的服務平台。</p>
+                
+                
+            </div>
+          </div>
+
+          <div class="item">
             <img src="../../assets/images/carousel-1.jpg" alt="90days free stock">
             <div class="carousel-caption">
               <h3 class="font-bold text-black animated fadeInDown header text-left">60天免存倉費</h3>
@@ -230,10 +240,10 @@
                       <div class="form-group col-sm-12">
                         <div class="input-group">
                           <div class="input-group-addon">集運方式</div>
-                            <select class="form-control">
-                              <option>淘轉特價專線</option>
-                              <option>大貨專線</option>
-                              <option>自取點</option>
+                            <select class="form-control" ng-model="vm.priceList">
+                              <option value="1">淘轉特價專線</option>
+                              <option value="2">大貨專線</option>
+                              <option value="3">自取點</option>
                             </select>
                         </div>
                       </div>
@@ -242,7 +252,7 @@
                     </form>
                 </div>
                 <div class="panel-footer">
-                    <p>運費: </p>
+                    <p>運費: {{ vm.getFreight() }}</p>
                 </div>
             </div>
         </div>
@@ -294,6 +304,35 @@
                     <h4 style="color: #fe5722;">客戶服務部</h4>
                 </div>
                 <div class="panel-body">
+                
+                    <form class="form-horizontal">
+                      <div class="form-group col-sm-12">
+                        <label class="sr-only" for="name">姓名</label>
+                        <input type="text" class="form-control" id="name" placeholder="姓名" ng-model="vm.mail.name">
+                      </div>
+                      
+                      <div class="form-group col-sm-12">
+                        <label class="sr-only" for="email">電郵地址</label>
+                        <input type="email" class="form-control" id="email" placeholder="電郵地址" ng-model="vm.mail.email">
+                      </div>
+                      
+                      <div class="form-group col-sm-12">
+                        <label class="sr-only" for="phone">聯絡電話</label>
+                        <input type="text" class="form-control" id="phone" placeholder="聯絡電話" ng-model="vm.mail.phone">
+                      </div>
+                      
+                      <div class="form-group col-sm-12">
+                        <label class="sr-only" for="memberId"></label>
+                        <input type="text" class="form-control" id="memberId" placeholder="會員號碼" ng-model="vm.mail.member_id">
+                      </div>
+
+                      <div class="form-group col-sm-12">
+                        <textarea class="form-control" rows="3" placeholder="留言" ng-model="vm.mail.content"></textarea>
+                      </div>
+                      
+                      <button type="submit" class="btn btn-primary" ng-click="vm.sendMail()">提交</button>
+
+                    </form>
 
                 </div>
             </div>
@@ -395,9 +434,10 @@
         </section>
     </div>
     
+    <!-- Customer don't like this background
     <div class="row pickup_banner">
         <div class="col-sm-12"></div>
-    </div>
+    </div> -->
     <div class="row pickup_part">
         <div class="col-sm-4">
             <div class="panel panel-default">
