@@ -1,7 +1,26 @@
+.pl_tb_part {
+    background: #eeeeee;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
 .pd_no {
     padding-left: 0;
     padding-right: 0;
-    list-style-type: none;
+}
+
+.lt_sy_no {list-style-type: none;}
+
+.lt_sy_no h5 {
+    margin-top:10px;
+    font-weight: bold;
+    font-size:16px;
+}
+
+.pl_tb_box {
+    border: thin solid #cccccc;
+    background: white;
+    padding-bottom: 20px;
 }
 
 
@@ -9,8 +28,10 @@
     background: #fc5722;
     color:white;
     margin-left:0;
+    padding: 5px;
 }
 
-.pl_tb_content {
-    
+.pl_tb_title h4 {
+    font-size:20px;
+    font-weight: bold;
 }

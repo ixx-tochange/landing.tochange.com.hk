@@ -1,0 +1,39 @@
+/* google map style */
+#map-canvas {
+	height:600px;
+	wdith:100%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+#map-canvas {
+	height:450px;
+}
+}
+
+@media (max-width: 767px) {
+#map-canvas {
+	height:300px;
+}
+}
+
+.ct_part {
+    background: #fc5722;
+    color:white;
+}
+
+.ct_part ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.ct_part ul li {
+    padding: 10px 20px;
+}
+
+.ct_part .ct_title {
+    background: #666;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 10px;
+}
