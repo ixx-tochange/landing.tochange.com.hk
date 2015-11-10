@@ -35,3 +35,77 @@
     font-size:20px;
     font-weight: bold;
 }
+
+.ali_rc_title h4 {
+    font-size:20px;
+    font-weight: bold;
+}
+
+.ali_circle {
+    border-radius: 100px;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    background: white;
+    overflow: hidden;
+}
+
+@media (min-width:768px) {
+    .ali_info {
+        padding-left:10px;
+        padding-right: 10px;
+    }
+}
+
+@media (min-width:468px) and (max-width:767px) {
+    .ali_info {
+        position: relative;
+        width: 380px;
+        left:50%;
+        margin-left:-190px;
+    }
+    .ali_box {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width:467px) {
+    .ali_info {
+        position: relative;
+        width: 280px;
+        left:50%;
+        margin-left:-140px;
+    }
+    .ali_box {
+        margin-bottom: 30px;
+    }
+}
+
+.ali_info li h5 {
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.ali_info li h6 {
+    color: #fc5722;
+    margin-bottom: 0;
+}
+
+.faq_question {
+    list-style-type: decimal;
+    color: #fc5722;
+    padding-right: 20px;
+}
+
+.faq_question li {
+    padding-top: 8px;
+}
+
+.faq_question h4 {
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.faq_question p {
+    color: #58666e;
+}
