@@ -1,5 +1,30 @@
+.tt_part_pt {
+    padding-left: 0;
+    padding-right:0;
+}
+
+.tt_part_pt img {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.tt_title {
+    background: #737d86;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+
+
 .pl_tb_part {
     background: #eeeeee;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.pl_rm_part {
+    background: #737d86;
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -23,6 +48,28 @@
     padding-bottom: 20px;
 }
 
+.pl_rm_box {
+    border: thin solid #cccccc;
+    background: white;
+    padding-bottom: 20px;
+}
+.pl_rm_box li {
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: justify;
+    line-height: 24px;
+}
+.pl_rm_title {
+    color: #fc5722;
+    margin-left:0;
+    padding: 5px 5px 0 5px;
+}
+.pl_rm_box hr {
+    border-color: #fc5722;
+}
+.pl_rm_box h5 {
+    padding-left: 15px;
+}
 
 .pl_tb_title {
     background: #fc5722;

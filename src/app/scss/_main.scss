@@ -903,6 +903,13 @@ body {
   vertical-align: middle;
 }
 
+@media (max-width:467px) {
+    .navbar-brand img {
+        width: 240px;
+        padding-top: 5px;
+    }
+}
+
 @media (min-width: 768px) {
   .app-aside,
   .navbar-header {
@@ -5421,4 +5428,58 @@ a.text-#000000:hover {
     .carousel-caption p {
         font-size:13px;
     }
+}
+
+
+/* cs chat box style */
+.cs_chat_box {
+    z-index: 500;
+    font-size: 20px;
+    color:white;
+    width: 130px;
+    height: 40px;
+    color:white;
+    border-radius: 8px;
+    background: #ff5607;
+    position: fixed;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.cs_chat_box i {
+    font-size:24px;
+    width: 40px;
+    height: 40px;
+    padding-top: 6px;
+    padding-left: 8px;
+    background: #d34300;
+    border-radius: 8px 0 0 8px;
+}
+.cs_chat_box span {
+        padding-left: 15px;
+}
+a .cs_chat_box:hover {
+    -webkit-transform: scale(1.1);  /* Saf3.1+, Chrome */
+     -moz-transform: scale(1.1);  /* FF3.5+ */
+      -ms-transform: scale(1.1);  /* IE9 */
+       -o-transform: scale(1.1);  /* Opera 10.5+ */
+          transform: scale(1.1);
+}
+
+@media (min-width: 768px) {
+    .cs_chat_box {
+        right: 30px;
+        bottom: 50px;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .cs_chat_box {
+        right: 15px;
+        bottom: 30px;
+    }
+    
 }
