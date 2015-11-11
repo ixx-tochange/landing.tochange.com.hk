@@ -3,23 +3,23 @@
 
     angular
         .module('landing')
-        .controller('FAQController', FAQController);
+        .controller('NewsController', NewsController);
         
         
-    function FAQController($http) {
+    function NewsController($http) {
         var vm = this;
         
-        vm.faqs = [];
+        vm.articles = [];
             
         activate();
 
         function activate() {
             $http({
                 method: 'GET',
-                url: '//tochangeapp.easy-cheque.com/api/v1/faqs'
+                url: '//tochangeapp.easy-cheque.com/api/v1/articles'
             })
             .success(function(data, status, headers, config){
-                vm.faqs = data._items;
+                vm.articles = data._items;
             });
         }        
     }

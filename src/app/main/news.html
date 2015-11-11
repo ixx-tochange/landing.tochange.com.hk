@@ -1,1 +1,15 @@
-news.html
+<div class="row">
+    <div class="col-sm-12" style="padding-left:0; padding-right:0;"><img src="../../assets/images/faq_banner.png" class="img-responsive" /></div>
+</div>
+
+<div class="row pl_tb_part">
+    
+    <ul class="faq_question">
+        <li ng-repeat="article in vm.articles">
+            <h4>{{article.title}}</h4>
+            <p>{{article.publish_datetime | amDateFormat:'YYYY-MM-DD'}}</p>
+            <p ng-bind-html="article.content"></p>
+        </li>
+    </ul>
+    
+</div>

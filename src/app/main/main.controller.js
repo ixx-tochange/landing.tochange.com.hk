@@ -27,14 +27,24 @@
     vm.getFreight = getFreight;
     vm.sendMail = sendMail;
     
+    vm.articles = [];
     
 
     activate();
 
     function activate() {
-      
+        $http({
+            method: 'GET',
+            url: '//tochangeapp.easy-cheque.com/api/v1/articles'
+        })
+        .success(function(data, status, headers, config){
+            vm.articles = data._items;
+        });
       
     }
+    
+    
+        
     
     function getFreight(){
         if(vm.dimension.weight == 0){

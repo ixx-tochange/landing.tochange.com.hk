@@ -42,7 +42,8 @@
       })
       .state('landing.news', {
         url: '/news',
-        templateUrl: 'app/main/news.html'
+        templateUrl: 'app/main/news.html',
+        controller: 'NewsController as vm'
       });
 
     $urlRouterProvider.otherwise('/');

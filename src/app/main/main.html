@@ -393,19 +393,14 @@
           <div class="col-sm-6 wrapper-xl">
             <h3 class="text-dark font-bold m-b-lg">最新消息</h3>
             <ul class="list-unstyled  m-t-xl">
-              <li data-ride="animated" data-animation="fadeInUp" data-delay="600">
+              <li ng-repeat="article in vm.articles">
                 <span class="glyphicon glyphicon-ok pull-left"></span>
-                <p class="clear m-b-lg"><strong>6月20日 ( 星期六 )</strong>, 香港運輸、葵涌自取點及客服查詢休息。 </p>
-              </li>
-              <li data-ride="animated" data-animation="fadeInUp" data-delay="900">
-                <span class="glyphicon glyphicon-ok pull-left"></span>
-                <p class="clear m-b-lg"><strong>6月18日 ( 星期四 )</strong>, 六月二十日端午節假期，中轉站假期前最後一天發貨</p>
-              </li>
-              <li data-ride="animated" data-animation="fadeInUp" data-delay="1100">
-                <span class="glyphicon glyphicon-ok pull-left"></span>
-                <p class="clear m-b-lg"><strong>2014年7月22日</strong>, 接獲中國海關通知，國內嚴禁運送手機到港，不論任何牌子及價錢，一經海關發現，收件人將有機會被罰款高達人民幣15000 ( 棄件亦不能免責 )</p> 
+                <p class="clear m-b-lg"><strong>{{article.publish_datetime | amDateFormat:'YYYY-MM-DD'}} - {{article.title}}</strong><span class="clear m-b-lg" ng-bind-html="article.content"></span></p>
               </li>
             </ul>
+            
+            <a href="#/news" class="btn btn-lg btn-default btn-rounded">更多消息</a>
+              
           </div>
     </div> 
 
