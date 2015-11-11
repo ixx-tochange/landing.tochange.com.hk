@@ -33,7 +33,8 @@
       })
       .state('landing.faq', {
         url: '/faq',
-        templateUrl: 'app/main/faq.html'
+        templateUrl: 'app/main/faq.html',
+        controller: 'FAQController as vm'
       })
       .state('landing.alipay', {
         url: '/alipay',
