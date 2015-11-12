@@ -44,6 +44,14 @@
         url: '/news',
         templateUrl: 'app/main/news.html',
         controller: 'NewsController as vm'
+      })
+      .state('landing.tandc', {
+        url: '/tandc',
+        templateUrl: 'app/main/tandc.html'
+      })
+      .state('landing.payment_tandc', {
+        url: '/payment_tandc',
+        templateUrl: 'app/main/payment_tandc.html'
       });
 
     $urlRouterProvider.otherwise('/');

@@ -114,6 +114,11 @@ body.slide-active {
 	#slide-nav .navbar-form .btn {
 	    width: 100%
 	}
+    
+    #slidemenu a.show-sm {
+        display: fixed;
+        margin-bottom: 10px;
+    }
 }
 @media (min-width:768px) { 
 	#page-content {
@@ -125,4 +130,7 @@ body.slide-active {
 	.navbar-header {
 	    left: 0!important
 	}
+    #slidemenu a.show-sm {
+        display: none;
+    }
 }

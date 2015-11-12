@@ -5,7 +5,7 @@
         <div class="navbar navbar-inverse navbar-static-top" role="navigation" id="slide-nav">
             <div class="container">
                 <div class="navbar-header">
-                    <a class="navbar-toggle"> 
+                    <a class="navbar-toggle" id="navbar-toggle"> 
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -17,7 +17,7 @@
                 </div>
        
                 <div id="slidemenu">
-                    <!-- <a onclick="toggleSlideMenu();" class="btn btn-default" id="menu-toggle"><i class="fa fa-close"></i></a> -->
+                    <a onclick="toggleSlideMenu();" class="btn btn-default show-sm"><i class="fa fa-close"></i></a>
                     
                     <ul class="nav navbar-nav navbar-right">
                         <li ui-sref-active="active"><a onclick="toggleSlideMenu();" ui-sref="landing.home"><i class="fa fa-home"></i> 網站首頁</a></li>
@@ -45,8 +45,8 @@
               <div class="col-sm-6">
                 <h3 class="text-u-c m-b font-thin"><span class="b-b b-dark font-bold" style="color: #fd5822">條款</span></h3>
                 <ul class="list-unstyled">
-                  <li><a href="#">物流條款細則</a></li>
-                  <li><a href="#">付款服務協議</a></li>
+                  <li><a href="#/tandc">物流條款細則</a></li>
+                  <li><a href="#/payment_tandc">付款服務協議</a></li>
                 </ul>
                 <!-- <p class="m-b-xl">More coming...</p> -->
               </div>
@@ -164,9 +164,9 @@ function toggleSlideMenu(){
 
     $('.navbar-header').stop().animate({
         left: selected ? '0px' : '80%'
-    });
+    });    
     
-    $('#slide-nav').toggleClass('slide-active', !selected);
+    $('#navbar-toggle').toggleClass('slide-active', !selected);
     $('#slidemenu').toggleClass('slide-active');
     $('#page-content, .navbar, body, .navbar-header').toggleClass('slide-active');
 }
