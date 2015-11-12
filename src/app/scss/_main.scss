@@ -5402,6 +5402,9 @@ a.text-#000000:hover {
     .carousel-caption p {
         font-size:15px;
     }
+    .carousel-caption p.hide-sm {
+        display: none;
+    }
 }
 
 @media (min-width: 468px) and (max-width: 767px) {
@@ -5415,6 +5418,9 @@ a.text-#000000:hover {
     .carousel-caption p {
         font-size:14px;
     }
+    .carousel-caption p.hide-sm {
+        display: none;
+    }
 }
 
 @media (max-width: 467px) {
@@ -5427,6 +5433,9 @@ a.text-#000000:hover {
     }
     .carousel-caption p {
         font-size:13px;
+    }
+    .carousel-caption p.hide-sm {
+        display: none;
     }
 }
 

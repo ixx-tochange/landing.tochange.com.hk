@@ -1,86 +1,86 @@
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 <div class="container">   
-    
     <div class="row">
-    <div class="navbar navbar-inverse navbar-static-top" role="navigation" id="slide-nav">
-      <div class="container">
-       <div class="navbar-header">
-        <a class="navbar-toggle"> 
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-         </a>
-        <a class="navbar-brand" href="#/" style="padding: 6px 6px 6px 30px">
-                    <img src="assets/images/logo.png" class="img-responsive" alt="Responsive image">
-                  </a>
-       </div>
+        <div class="navbar navbar-inverse navbar-static-top" role="navigation" id="slide-nav">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-toggle"> 
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <a class="navbar-brand" href="#/" style="padding: 6px 6px 6px 30px">
+                        <img src="assets/images/logo.png" class="img-responsive" alt="Responsive image">
+                    </a>
+                </div>
        
-       <div id="slidemenu">
-        <ul class="nav navbar-nav navbar-right">
-            <li ui-sref-active="active"><a ui-sref="landing.home"><i class="fa fa-home"></i> 網站首頁</a></li>
-            <li><a ng-href="client/#"><i class="fa fa-gift"></i> 合併集運</a></li>
-            <li ui-sref-active="active"><a ui-sref="landing.tutorial"><i class="fa fa-graduation-cap"></i> 集運教學</a></li>            
-            <li ui-sref-active="active"><a ui-sref="landing.price-list"><i class="fa fa-usd"></i> 集運收費</a></li>
-            <li ui-sref-active="active"><a ui-sref="landing.address"><i class="fa fa-location-arrow"></i> 集運地址</a></li>
-            <li ui-sref-active="active"><a ui-sref="landing.alipay"><i class="fa fa-cny"></i> 支付寶充值</a></li>
-            <li ui-sref-active="active"><a ui-sref="landing.faq"><i class="fa fa-question"></i> 常見問題</a></li>
-            <li><a ng-href="client/#/login"><i class="fa fa-sign-in"></i> 登入</a></li>
-        </ul>
+                <div id="slidemenu">
+                    <!-- <a onclick="toggleSlideMenu();" class="btn btn-default" id="menu-toggle"><i class="fa fa-close"></i></a> -->
+                    
+                    <ul class="nav navbar-nav navbar-right">
+                        <li ui-sref-active="active"><a onclick="toggleSlideMenu();" ui-sref="landing.home"><i class="fa fa-home"></i> 網站首頁</a></li>
+                        <li><a ng-href="client/#"><i class="fa fa-gift"></i> 合併集運</a></li>
+                        <li ui-sref-active="active"><a onclick="toggleSlideMenu();" ui-sref="landing.price-list"><i class="fa fa-usd"></i> 集運收費</a></li>
+                        <li ui-sref-active="active"><a onclick="toggleSlideMenu();" ui-sref="landing.address"><i class="fa fa-location-arrow"></i> 集運地址</a></li>
+                        <li ui-sref-active="active"><a onclick="toggleSlideMenu();" ui-sref="landing.alipay"><i class="fa fa-cny"></i> 支付寶充值</a></li>
+                        <li ui-sref-active="active"><a onclick="toggleSlideMenu();" ui-sref="landing.faq"><i class="fa fa-question"></i> 常見問題</a></li>
+                        <li><a ng-href="client/#/login"><i class="fa fa-sign-in"></i> 登入</a></li>
+                    </ul>
 
-       </div>
-      </div>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
 
-<div id="page-content">
+    <div id="page-content">
     
-    <div ui-view></div>
+        <div ui-view></div>
     
 
-    <!-- footer -->
-    <footer id="footer">
-        <div class="row" style="padding: 30px;">
-          <div class="col-sm-6">
-            <h3 class="text-u-c m-b font-thin"><span class="b-b b-dark font-bold" style="color: #fd5822">條款</span></h3>
-            <ul class="list-unstyled">
-              <li><a href="#">物流條款細則</a></li>
-              <li><a href="#">付款服務協議</a></li>
-            </ul>
-            <!-- <p class="m-b-xl">More coming...</p> -->
-          </div>
-          <div class="col-sm-6">
-             <h3 class="text-u-c m-b font-thin"><span class="b-b b-dark font-bold" style="color: #fd5822">香港辦事處地址</span> :</h3>
-            <p class="text-sm">葵涌打磚坪街68號 <br>
-              和豐工業中心22樓20A室 <br>
-              熱線電話: +852 3184 0300 <br>
-              電郵: <a href="mailto:hey@example.com">info@tochange.com.hk</a>
-             </p>
-             <p class="m-b-xl">辨公時間: 星期一至六10:00 am – 7:00 pm</p>
-          </div>
-        </div>
+        <!-- footer -->
+        <footer id="footer">
+            <div class="row" style="padding: 30px;">
+              <div class="col-sm-6">
+                <h3 class="text-u-c m-b font-thin"><span class="b-b b-dark font-bold" style="color: #fd5822">條款</span></h3>
+                <ul class="list-unstyled">
+                  <li><a href="#">物流條款細則</a></li>
+                  <li><a href="#">付款服務協議</a></li>
+                </ul>
+                <!-- <p class="m-b-xl">More coming...</p> -->
+              </div>
+              <div class="col-sm-6">
+                 <h3 class="text-u-c m-b font-thin"><span class="b-b b-dark font-bold" style="color: #fd5822">香港辦事處地址</span> :</h3>
+                <p class="text-sm">葵涌打磚坪街68號 <br>
+                  和豐工業中心22樓20A室 <br>
+                  熱線電話: +852 3184 0300 <br>
+                  電郵: <a href="mailto:hey@example.com">info@tochange.com.hk</a>
+                 </p>
+                 <p class="m-b-xl">辨公時間: 星期一至六10:00 am – 7:00 pm</p>
+              </div>
+            </div>
 
-        <div class="row" style="background-color: #eeeeee; padding: 10px;">
-          <div class="col-xs-8">
-            <ul class="list-inline">
-              <!-- <li><a href="#">TO Change</a></li>
-              <li><a href="#">廣告查詢</a></li>
-              <li><a href="#">聯繫我們</a></li>
-              <li><a href="#">聯繫我們</a></li> -->
-              <li><a href="https://www.facebook.com/tochange.team" target="_blank"><img src="../../assets/images/find_us_on_facebook.png" height="25px" /></a></li>
-              
-              <li><div class="alicdn"><a href="http://amos.alicdn.com/getcid.aw?spm=a1z10.1.0.0.fjnDlg&amp;v=3&amp;site=cntaobao&amp;groupid=0&amp;s=1&amp;uid=futurefuture328" target="_blank" title="点此可以直接和卖家交流选好的宝贝，或相互交流网购体验，还支持语音视频噢。" data-spm-anchor-id="a1z10.1.0.0"><img border="0" src="http://amos.alicdn.com/online.aw?v=2&amp;uid=coolcool328&amp;site=cntaobao&amp;s=1&amp;charset=utf-8"></a></div>
-              </li>
-              
-              <li><a href="https://shop106696684.world.taobao.com/index.htm?spm=a312a.7728556.w5002-4033790259.2.pe8p0p" target="_blank"><img src="../../assets/images/tb_store.png" height="25px" /></a></li>
-            </ul> 
-          </div>
-          <div class="col-xs-4 text-right">
-            TO Change &copy; 2015
-          </div>
-        </div>
-    </footer>
+            <div class="row" style="background-color: #eeeeee; padding: 10px;">
+              <div class="col-xs-8">
+                <ul class="list-inline">
+                  <!-- <li><a href="#">TO Change</a></li>
+                  <li><a href="#">廣告查詢</a></li>
+                  <li><a href="#">聯繫我們</a></li>
+                  <li><a href="#">聯繫我們</a></li> -->
+                  <li><a href="https://www.facebook.com/tochange.team" target="_blank"><img src="../../assets/images/find_us_on_facebook.png" height="25px" /></a></li>
+                  
+                  <li><div class="alicdn"><a href="http://amos.alicdn.com/getcid.aw?spm=a1z10.1.0.0.fjnDlg&amp;v=3&amp;site=cntaobao&amp;groupid=0&amp;s=1&amp;uid=futurefuture328" target="_blank" title="点此可以直接和卖家交流选好的宝贝，或相互交流网购体验，还支持语音视频噢。" data-spm-anchor-id="a1z10.1.0.0"><img border="0" src="http://amos.alicdn.com/online.aw?v=2&amp;uid=coolcool328&amp;site=cntaobao&amp;s=1&amp;charset=utf-8"></a></div>
+                  </li>
+                  
+                  <li><a href="https://shop106696684.world.taobao.com/index.htm?spm=a312a.7728556.w5002-4033790259.2.pe8p0p" target="_blank"><img src="../../assets/images/tb_store.png" height="25px" /></a></li>
+                </ul> 
+              </div>
+              <div class="col-xs-4 text-right">
+                TO Change &copy; 2015
+              </div>
+            </div>
+        </footer>
 
     </div>
 
@@ -105,6 +105,7 @@ $(document).ready(function () {
 
     $("#slide-nav").on("click", toggler, function (e) {
         var selected = $(this).hasClass('slide-active');
+        
         $('#slidemenu').stop().animate({
             left: selected ? menuneg : '0px'
         });
@@ -137,7 +138,37 @@ $(document).ready(function () {
         }
 
     });
+    
 
 });
+
+
+function toggleSlideMenu(){
+
+    if ($(window).width() > 767 && $('.navbar-toggle').is(':hidden')) {
+        return;
+    }
+    var selected = $("#slide-nav").hasClass('slide-active');
+    
+    $('#slidemenu').stop().animate({
+        left: selected ? '-100%' : '0px'
+    });
+    
+    $('#navbar-height-col').stop().animate({
+        left: selected ? '-80%' : '0px'
+    });
+
+    $('#page-content').stop().animate({
+        left: selected ? '0px' : '80%'
+    });
+
+    $('.navbar-header').stop().animate({
+        left: selected ? '0px' : '80%'
+    });
+    
+    $('#slide-nav').toggleClass('slide-active', !selected);
+    $('#slidemenu').toggleClass('slide-active');
+    $('#page-content, .navbar, body, .navbar-header').toggleClass('slide-active');
+}
 
 </script>
