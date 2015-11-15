@@ -16,7 +16,7 @@
         function activate() {
             $http({
                 method: 'GET',
-                url: '//tochangeapp.easy-cheque.com/api/v1/faqs'
+                url: '//app.tochange.com.hk/api/v1/faqs'
             })
             .success(function(data, status, headers, config){
                 vm.faqs = data._items;

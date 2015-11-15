@@ -6,7 +6,7 @@
     .controller('MainController', MainController);
 
   /** @ngInject */
-  function MainController($http, $timeout, webDevTec, toastr) {
+  function MainController($http) {
     var vm = this;
     
     vm.dimension = {
@@ -35,7 +35,7 @@
     function activate() {
         $http({
             method: 'GET',
-            url: '//tochangeapp.easy-cheque.com/api/v1/articles'
+            url: '//app.tochange.com.hk/api/v1/articles'
         })
         .success(function(data, status, headers, config){
             vm.articles = data._items;
@@ -60,11 +60,9 @@
     }
     
     function sendMail(){
-        console.log(vm.mail);
-        
         $http({
             method: 'POST',
-            url: '//tochangeapp.easy-cheque.com/enquiry',
+            url: '//app.tochange.com.hk/enquiry',
             data: vm.mail
         })
         .success(function(data, status, headers, config){
